@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+body {
+  background-color: #f8f9fa; /* Change the background color of the body */
+  font-family: Arial, sans-serif; /* Use a more common font for better readability */
+}
+
+#game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#game {
+  width: 500px;
+  height: 500px;
+  border: 2px solid #1c7943;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  background-color: #eff8ff; /* Change the background color of the game */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+#character {
+  width: 20px;
+  height: 20px;
+  background-color: #0890ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 400px;
+  left: 190px;
+  z-index: 1000000;
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.block {
+  width: 100%;
+  height: 20px;
+  background-color: #464141;
+  position: relative;
+  margin-top: -20px;
+}
+
+.hole {
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  position: relative;
+  margin-top: -20px;
+}
+
+#score-container {
+  margin-left: 20px;
+  text-align: center;
+}
+
+#score,
+#high-score {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #666;
+}
